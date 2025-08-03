@@ -1,0 +1,104 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Fuente_cuerpo"; /* Le das un nombre a la fuente */
+  src: url("../fonts/WorkSans-VariableFont_wght.ttf") format("woff2"); /* Ruta a tu archivo de fuente */
+  font-weight: normal; /* Define el peso de la fuente */
+  font-style: normal; /* Define el estilo de la fuente */
+}
+
+@font-face {
+  font-family: "Fuente_titulo"; /* Le das un nombre a la fuente */
+  src: url("../fonts/static/WorkSans-Bold.ttf") format("woff2"); /* Ruta a tu archivo de fuente */
+  font-weight: normal; /* Define el peso de la fuente */
+  font-style: normal; /* Define el estilo de la fuente */
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "Fuente_titulo", sans-serif;
+}
+
+.accordion {
+  background-image: url("/assets/images/background-pattern-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Fuente_cuerpo", sans-serif;
+  position: relative;
+}
+
+@media (min-width: 38rem) {
+  .accordion {
+    background-image: url("/assets/images/background-pattern-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.accordion__main {
+  background-color: #fff;
+  width: 40rem;
+  max-width: 90%;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.accordion__header {
+  display: flex;
+  gap: 1rem;
+}
+
+.accordion__tittle {
+  font-size: 3rem;
+  font-weight: 900;
+  color: hsl(292, 42%, 14%);
+}
+
+.accordion__section {
+  margin-top: 2rem;
+}
+
+.accordion__lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__subtitulo {
+  font-weight: bold;
+  color: hsl(292, 42%, 14%);
+}
+
+.accordion__subtitulo:hover {
+  color: hsl(293, 48%, 64%);
+}
+
+.accordion__text {
+  margin-top: 1rem;
+  color: hsl(270, 3%, 56%);
+  font-weight: 500;
+}
+
+.accordion__text--ocultar {
+  display: none;
+}

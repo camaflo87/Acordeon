@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <link rel="stylesheet" href="./assets/src/build.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="accordion">
+    <main class="accordion__main">
+      <header class="accordion__header">
+        <img src="./assets/images/icon-star.svg" alt="viñeta_estrella" />
+        <h1 class="accordion__tittle">FAQs</h1>
+      </header>
+
+      <!-- Sección Uno -->
+      <section class="accordion__section">
+        <div class="accordion__bloque" data_vineta="opc1">
+          <div class="accordion__lista">
+            <p class="accordion__subtitulo">
+              What is frontend Mentor, and how will it help me?
+            </p>
+            <img
+              src="./assets/images/icon-plus.svg"
+              alt="tamano_icono"
+              id="opc1"
+            />
+          </div>
+          <p class="accordion__text accordion__text--ocultar" data-lista="opc1">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección Dos -->
+      <section class="accordion__section">
+        <div class="accordion__bloque" data_vineta="opc2">
+          <div class="accordion__lista">
+            <p class="accordion__subtitulo">Is Frontend Mentor free?</p>
+            <img
+              src="./assets/images/icon-plus.svg"
+              alt="maximizar"
+              id="opc2"
+            />
+          </div>
+          <p class="accordion__text accordion__text--ocultar" data-lista="opc2">
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección Tres -->
+      <section class="accordion__section">
+        <div class="accordion__bloque" data_vineta="opc3">
+          <div class="accordion__lista">
+            <p class="accordion__subtitulo">
+              Can I use Frontend Mentor projects in my portfolio?
+            </p>
+            <img
+              src="./assets/images/icon-plus.svg"
+              alt="maximizar"
+              id="opc3"
+            />
+          </div>
+          <p class="accordion__text accordion__text--ocultar" data-lista="opc3">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección Cuatro -->
+      <section class="accordion__section">
+        <div class="accordion__bloque" data_vineta="opc4">
+          <div class="accordion__lista">
+            <p class="accordion__subtitulo">
+              How can i get help if i'm stuck on a chanllenge?
+            </p>
+            <img
+              src="./assets/images/icon-plus.svg"
+              alt="maximizar"
+              id="opc4"
+            />
+          </div>
+          <p class="accordion__text accordion__text--ocultar" data-lista="opc4">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Carlos Alberto Martinez Florez - TecnoDev</a>.
+    </div>
+
+    <script src="./assets/src/App.js"></script>
+  </body>
+</html>
